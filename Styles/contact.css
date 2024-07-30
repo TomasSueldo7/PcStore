@@ -1,0 +1,47 @@
+form{
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  margin-top: 1rem;
+}
+
+form label, form select{
+  font-size: 0.9rem;
+  padding: 0.1rem;
+  margin-top: 0.3rem;
+}
+
+#resetButton{
+  background-color: #636262; /* Color de fondo */
+}
+
+#consulta{
+  height: 2rem;
+}
+
+.botones-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+}
+
+#consulta{
+  height: 5rem;
+}
+
+/* Media query para pantallas más anchas (desktop) */
+@media (min-width: 768px) {
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formulario form{
+    width: 80%;
+  }
+}
+

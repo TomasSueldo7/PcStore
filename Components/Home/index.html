@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../Styles/style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">
+          <h1><i class="fa-solid fa-cubes"></i>PcStore</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="../Home/index.html">Inicio</a>
+        <a href="../Promotions/promotions.html">Promociones</a>
+        <a href="../AboutUs/about.html">Quienes Somos</a>
+        <a href="../Contact/contact.html">Contactános</a>
+      </nav>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <div class="side-bar" id="side-bar">
+      <a href="../Home/index.html">Inicio</a>
+      <a href="../Promotions/promotions.html">Promociones</a>
+      <a href="../AboutUs/about.html">Quienes Somos</a>
+      <a href="../Contact/contact.html">Contactános</a>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <section id="novedades">
+      <h1><i class="fa-solid fa-bolt"></i> Novedades</h1>
+      <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20240708173518_5nnoYZK7.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20240610172739_6qw0yVem.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20240715121956_rTYCzSAI.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section>
+      <h1><i class="fa-solid fa-tag"></i> Compra con nosotros</h1>
+        <div class="compras">
+          <div class="compras-container">
+            <i class="fa-solid fa-money-bill" id="fire-logo"></i>
+            <h4>Productos hasta en 12 coutas sin interés</h4>
+          </div>
+          <div class="compras-container">
+            <i class="fa-solid fa-truck" id="truck-logo"></i>
+            <h4>Envíos a todo el país al menor precio</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-author">
+          <p>Autor: Tomas Sueldo</p>
+        </div>
+        <div class="social">
+          <p>Redes: </p>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="../../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
