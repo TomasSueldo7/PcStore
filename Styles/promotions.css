@@ -13,6 +13,27 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card.hovered {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de zoom al pasar el ratón */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Estilos para los controles de la tarjeta */
+.card-controls {
+  margin-top: 10px;
+}
+
+.card-controls input {
+  margin-right: 10px;
 }
 
 .card img {

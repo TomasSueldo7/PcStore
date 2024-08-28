@@ -170,6 +170,10 @@ button {
   cursor: pointer; 
 }
 
+input:invalid {
+  border-color: red;
+}
+
 /* Media query para pantallas más anchas (desktop) */
 @media (min-width: 768px) {
 
