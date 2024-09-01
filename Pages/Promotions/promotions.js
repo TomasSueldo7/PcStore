@@ -1,4 +1,4 @@
-// Cargar productos desde localStorage
+// Función para cargar productos desde localStorage
 function loadProducts() {
     const productos = JSON.parse(localStorage.getItem('productos')) || [];
     const cardsContainer = document.querySelector('.cards-container');
@@ -22,6 +22,9 @@ function loadProducts() {
             `;
             cardsContainer.insertAdjacentHTML('afterbegin', nuevaTarjeta);
         });
+
+        // Imprimir los productos en la consola
+        console.log(productos)
 
         // Agregar eventos a los nuevos controles
         document.querySelectorAll('.background-color-picker').forEach(input => {
@@ -52,25 +55,24 @@ function updateProductInLocalStorage(card, field, value) {
     localStorage.setItem('productos', JSON.stringify(productos));
 }
   
-// Llamar a loadProducts() en la carga de la página
 document.addEventListener('DOMContentLoaded', function() {
+    // Seleccionar todas las tarjetas y los inputs para los colores
+    const cards = document.querySelectorAll('.card');
 
-      // Seleccionar todas las tarjetas y los inputs para los colores
-  const cards = document.querySelectorAll('.card');
-  
-  cards.forEach(card => {
-    const bgColorInput = card.querySelector('.bg-color');
-    const borderColorInput = card.querySelector('.border-color');
-    
-    // Aplicar los colores seleccionados
-    bgColorInput.addEventListener('input', (event) => {
-      card.style.backgroundColor = event.target.value;
+    cards.forEach(card => {
+        const bgColorInput = card.querySelector('.bg-color');
+        const borderColorInput = card.querySelector('.border-color');
+        
+        // Aplicar los colores seleccionados
+        bgColorInput.addEventListener('input', (event) => {
+        card.style.backgroundColor = event.target.value;
+        });
+        
+        borderColorInput.addEventListener('input', (event) => {
+        card.style.borderColor = event.target.value;
+        });
     });
-    
-    borderColorInput.addEventListener('input', (event) => {
-      card.style.borderColor = event.target.value;
-    });
-  });
+        
     // Navegación para la tarjeta "Agregar un producto"
     const agregarProductoButton = document.getElementById('agregarProducto');
     if (agregarProductoButton) {
@@ -81,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     loadProducts();
 
-    // Aplicar efectos a las tarjetas
+    // Efectos de las tarjetas
     document.querySelectorAll('.card').forEach(card => {
         card.addEventListener('mouseover', function() {
             this.classList.add('hovered');
