@@ -54,6 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
     saveProduct(titulo, descripcion, urlImagen, precio, colorFondo, colorBorde);
 
     // Redirigir a la página de promociones
-    window.location.href = '../../Components/Promotions/promotions.html';
+    window.location.href = '/Pages/Promotions/promotions.html';
   });
 });
