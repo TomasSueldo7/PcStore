@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const agregarProductoButton = document.getElementById('agregarProducto');
     if (agregarProductoButton) {
         agregarProductoButton.addEventListener('click', function() {
-        window.location.href = '../../Components/AddProducts/addProduct.html';
+        window.location.href = '/Components/AddProducts/addProduct.html';
         });
     }
 
