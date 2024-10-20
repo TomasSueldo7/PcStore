@@ -10,7 +10,7 @@ import Contact from './src/pages/Contact'; // Asegúrate de crear este component
 
 const App = () => {
   return (
-    <Router>
+    <Router basename='/PcStore'>
       <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} /> 
