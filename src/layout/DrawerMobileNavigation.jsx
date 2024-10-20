@@ -32,7 +32,7 @@ export default function DrawerMobileNavigation() {
 
           {/* Lista de navegación */}
           <List component="nav">
-            <ListItemButton component={Link} to="/" onClick={() => setOpen(false)}>
+            <ListItemButton component={Link} to="/home" onClick={() => setOpen(false)}>
               Inicio
             </ListItemButton>
             <ListItemButton component={Link} to="/promotions" onClick={() => setOpen(false)}>

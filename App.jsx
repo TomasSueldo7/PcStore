@@ -13,7 +13,8 @@ const App = () => {
     <Router basename='/PcStore'>
       <Navbar></Navbar>
         <Routes>
-          <Route path="/" element={<Home />} /> 
+          <Route path="/" element={<Home />}/>
+          <Route path="/home" element={<Home />} /> 
           <Route path="/promotions" element={<Promotions />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} /> 
